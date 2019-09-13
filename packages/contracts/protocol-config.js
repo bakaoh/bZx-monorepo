@@ -68,6 +68,20 @@ module.exports = {
       BZxEther: "",
       MultiSig: ""
     },
+    matic: {
+      ZeroEx: {
+        ExchangeV1: "0x6b3ed046d4b7c237c4849e2d7fbdb34e4a2a5a95",
+        ExchangeV2: "0xd30d3d36daa6da31d481c19eaccd94558c1aa594",
+        ERC20Proxy: "0x0a53e142138c0d68f5cf968cc74c6f633df57f6b",
+        ERC721Proxy: "0x8fb632da59e73450e097847c0c75608f79770182",
+        ZRXToken: "0xb1b57aca0977fdc772bda3ee292b189f363bcea0",
+        AssetProxyOwner: "0x1f02042d523d9d8b5eafe6eb6d2945b1cf14dd2d",
+        TokenTransferProxy: "0xd689d03d444d292642014354891d970ce9195848",
+        WETH9: "0xbf4263c8842b48c2f7cb1ceb237ae0207952edab"
+      },
+      KyberContractAddress: "0xfB6bC957AcfcAd5bfe32dD66081F797fF6CD0974",
+      DAITokenAddress: "",
+    },
     mainnet: {
       ZeroEx: {
         ZRXToken: "0xe41d2489571d322189246dafa5ebde1f4699f498",

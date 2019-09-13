@@ -66,6 +66,7 @@
     "assets": "node ./extra/generate_test_assets.js",
     "preptestnet": "rimraf ./test_network/build_contracts && rimraf ./test_network/deployed && rimraf ./test_network/html_public_test && npm run assets && cpy ./build/contracts ./test_network/build_contracts && node-mv ./html_public_test/deployed ./test_network/deployed && node-mv ./html_public_test ./test_network/html_public_test",
     "migrate": "truffle migrate",
+    "migrate:matic": "truffle migrate --network matic",
     "migrate:reset": "truffle migrate --reset",
     "network": "npm run network:deploy && npm run network:deployprev && npm run network:run",
     "network-coverage": "npm run network:deploy && npm run network:deployprev && npm run network:run-coverage",

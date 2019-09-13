@@ -102,7 +102,7 @@ contract OracleInterface {
         address lender,
         address interestTokenAddress,
         uint256 amountOwed,
-        uint256 /* gasUsed */)
+        uint256 gasUsed)
         public
         returns (bool);
 

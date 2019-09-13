@@ -23,6 +23,8 @@ module.exports = (deployer, network, accounts) => {
   if (network == "development" || network == "develop" || network == "testnet" || network == "coverage") {
     network = "development";
     weth_token_address = BZxEther.address;
+  } else if (network == "matic") {
+    weth_token_address = BZxEther.address;
   } else {
     weth_token_address = config["addresses"][network]["ZeroEx"]["WETH9"];
   }
@@ -75,8 +77,8 @@ module.exports = (deployer, network, accounts) => {
 
         var weth = await BZxEther.at(weth_token_address);
         if (!OLD_ORACLE_ADDRESS) {
-          await weth.deposit({ value: valueAmount });
-          await weth.transfer(oracle.address, valueAmount);
+          // await weth.deposit({ value: valueAmount });
+          // await weth.transfer(oracle.address, valueAmount);
         }
 
         var bZxProxy = await BZxProxySettings.at(BZxProxy.address);

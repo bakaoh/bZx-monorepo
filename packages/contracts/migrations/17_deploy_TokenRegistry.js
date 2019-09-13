@@ -12,7 +12,7 @@ module.exports = (deployer, network, accounts) => {
     /*web3.eth.getBalance(accounts[0], function(error, balance) {
       console.log("migrations :: final balance: " + balance);
     });*/
-    return;
+    // return;
   }
 
   deployer.deploy(TokenRegistry).then(async function(registry) {

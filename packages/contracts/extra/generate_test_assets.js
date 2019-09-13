@@ -110,6 +110,9 @@ function proceed() {
     case "rinkeby":
       networkId = 4;
       break;
+    case "matic":
+      networkId = 8995;
+      break;
     default:
       networkId = 50;
   }

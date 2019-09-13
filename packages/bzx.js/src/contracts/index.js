@@ -4,6 +4,7 @@ import _mainnet, { TokenList as mainnetTokens/* , OracleList as mainnetOracles *
 import _ropsten, { TokenList as ropstenTokens/* , OracleList as ropstenOracles */ } from "./ropsten";
 import _rinkeby, { TokenList as rinkebyTokens/* , OracleList as rinkebyOracles */ } from "./rinkeby";
 import _kovan from "./kovan";
+import _matic from "./matic";
 
 const toLowerCase = map(({ address, ...rest }) => ({
   address: address.toLowerCase(),
@@ -15,17 +16,19 @@ const networksRaw = {
   mainnet: _mainnet,
   ropsten: _ropsten,
   kovan: _kovan,
-  rinkeby: _rinkeby
+  rinkeby: _rinkeby,
+  matic: _matic
 };
 const networks = map(network => toLowerCase(network), networksRaw);
 
-export const { local, mainnet, ropsten, kovan, rinkeby } = networks;
+export const { local, mainnet, ropsten, kovan, rinkeby, matic } = networks;
 
 const networksById = {
   1: mainnet,
   3: ropsten,
   4: rinkeby,
-  42: kovan
+  42: kovan,
+  8995: matic
 };
 
 const tokensById = {

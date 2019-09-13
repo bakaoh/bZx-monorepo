@@ -8,6 +8,7 @@ module.exports = (deployer, network, accounts) => {
   deployer.then(async () => {
     if (network == "development" || network == "develop" || network == "testnet" || network == "coverage") {
       network = "development";
+    } else if (network == "matic") {
     } else {
       console.log(`   > [${parseInt(path.basename(__filename))}] BZRxToken deploy: #skiped`);
       return;

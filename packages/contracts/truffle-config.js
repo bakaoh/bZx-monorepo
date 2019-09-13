@@ -85,6 +85,18 @@ module.exports = {
       timeoutBlocks: 200,
       skipDryRun: true
     },
+    matic: {
+      provider: () => new PrivateKeyProvider(
+        'fae42052f82bed612a724fec3632f325f377120592c75bb78adfcceae6470c5a',
+        "https://testnet2.matic.network"
+      ),
+      network_id: 8995,
+      gas: 6721975,
+      gasPrice: 0,
+      confirmations: 0,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
     mainnet: {
       provider: () => new PrivateKeyProvider(
         mainnetPrivKey,
